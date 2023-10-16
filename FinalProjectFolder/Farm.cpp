@@ -479,6 +479,10 @@ void Farm::plantProduce(int produce_iteration){
 
                     break;
             }
+
+            if (planting == 1){
+                lands[i].setEmptyOrUsed(1);
+            }
         }
 
         i++;    //iterating i;
@@ -487,6 +491,7 @@ void Farm::plantProduce(int produce_iteration){
 
     //moving time if planting occured
     if (planting == 1) {
+
         moveTime();
     }
 

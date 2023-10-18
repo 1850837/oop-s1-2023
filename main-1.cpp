@@ -1,3 +1,4 @@
+#include "Cell.h"
 #include "Effect.h"
 #include "Utils.h"
 #include <iostream>

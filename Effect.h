@@ -7,7 +7,7 @@ class Effect{
     protected:
 
     public:
-    virtual void apply(Cell& cell);
+    virtual void apply(Cell& cell)=0;
 };
 
 #endif

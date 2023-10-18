@@ -14,10 +14,8 @@ int main() {
     std::cout << "Pos is " << a << " " << b << "\n";
     std::cout << "Type is " << newCell.getType() << "\n";
     
-    Utils newUtils = Utils();
     std::tuple<int,int> c;
-    c = newUtils.generateRandomPos(10,10);
-    std::cout << "Distance is " << newUtils.calculateDistance(newCell.getPos(), c) << "\n";
+    std::cout << "Distance is " << Utils::calculateDistance(newCell.getPos(), Utils::generateRandomPos(10,10)) << "\n";
 
     return 0;
 }

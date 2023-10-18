@@ -37,8 +37,16 @@ class Game{
     }
 
     void gameLoop(int maxIterations, double trapActivationDistance){
+        int i = 0;
 
-        
+        while (i < maxIterations){
+
+            initGame(3,5,10,10);
+
+            
+
+            i++;
+        }
 
     }
 

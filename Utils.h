@@ -8,6 +8,10 @@ class Utils{
     protected:
 
     public:
+    Utils(){
+        
+    }
+
     static std::tuple<int, int> generateRandomPos(int gridWidth, int gridHeight){
         static int s = 0;
         std::tuple<int,int> pos;

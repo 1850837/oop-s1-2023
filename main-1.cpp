@@ -1,4 +1,3 @@
-#include "Cell.h"
 #include "Effect.h"
 #include "Utils.h"
 #include <iostream>
@@ -6,7 +5,7 @@
 
 int main() {
 
-    Cell newCell = Cell(1,2,0);
+    Cell newCell = Cell(1,2,'c');
 
     int a = std::get<0>(newCell.getPos());
     int b = std::get<1>(newCell.getPos());

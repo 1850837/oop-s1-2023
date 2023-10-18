@@ -24,6 +24,8 @@ std::tuple<int, int> Utils::generateRandomPos(int gridWidth, int gridHeight){
     else{
         pos = std::make_tuple(std::rand() % gridWidth,std::rand() % gridHeight);
     }
+
+    return pos;
 }
 
 double Utils::calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2){

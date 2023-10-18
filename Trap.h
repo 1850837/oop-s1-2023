@@ -7,6 +7,12 @@ class Trap : public Cell, public Effect {
     bool active;
 
     public:
+    Trap(){
+        position = std::make_tuple(0,0);
+        type = 'T';
+        active = 1;
+    }
+
     Trap(int x, int y){
         position = std::make_tuple(x,y);
         type = 'T';

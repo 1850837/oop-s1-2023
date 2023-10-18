@@ -4,6 +4,11 @@ class Character : public Cell {
     protected:
 
     public:
+    Character(){
+        position = std::make_tuple(0,0);
+        type = 'C';
+    }
+
     Character(int x, int y){
         position = std::make_tuple(x,y);
         type = 'C';

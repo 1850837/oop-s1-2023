@@ -1,6 +1,9 @@
 #include <tuple>
 #include <math.h>
 
+#ifndef UTILS_H
+#define UTILS_H
+
 class Utils{
     protected:
 
@@ -8,6 +11,8 @@ class Utils{
     static std::tuple<int, int> generateRandomPos(int gridWidth, int gridHeight);
     double calculateDistance(std::tuple<int, int> pos1, std::tuple<int, int> pos2);
 };
+
+#endif
 
 std::tuple<int, int> Utils::generateRandomPos(int gridWidth, int gridHeight){
     static int s = 0;

@@ -1,3 +1,6 @@
+#ifndef CELL_H
+#define CELL_H
+
 #include <tuple>
 
 class Cell{
@@ -13,6 +16,8 @@ class Cell{
     void setPos(int x, int y);
     void setType(char new_type);
 };
+
+#endif
 
 Cell::Cell(){
     position = std::make_tuple(0,0);
